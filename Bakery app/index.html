@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Online Bakery Shop</h1>
+            <button id="viewCartButton">View Cart</button>
+        </header>
+
+        <section id="itemsSection">
+            <h2>Available Items</h2>
+            <div id="itemList" class="item-list">
+                <!-- Bakery items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="cartSection" class="cart-section" style="display:none;">
+            <h2>Your Cart</h2>
+            <ul id="cartList">
+                <!-- Cart items will be dynamically inserted here -->
+            </ul>
+            <button id="checkoutButton">Proceed to Checkout</button>
+            <button id="closeCartButton">Close Cart</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
