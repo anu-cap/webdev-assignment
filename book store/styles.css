@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#bookCategories {
+    display: none;
+}
+
+#bookList ul {
+    list-style-type: none;
+}
+
+#bookList li {
+    margin: 10px 0;
+}
+
+h4 {
+    color: #007bff;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.img-thumbnail {
+    max-width: 50px;
+    max-height: 75px;
+}
