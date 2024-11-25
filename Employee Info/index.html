@@ -8,7 +8,8 @@
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar Navigation -->
+
+    
     <nav class="sidebar">
       <ul>
         <li><a href="#" class="active" onclick="showSection('add')">Add Employee</a></li>
@@ -18,13 +19,13 @@
       </ul>
     </nav>
 
-    <!-- Main Content Area -->
+    
     <div class="content">
       <header>
         <h1>Employee Management System</h1>
       </header>
 
-      <!-- Section: Add Employee -->
+     
       <section id="add" class="form-section active-section">
         <h2>Register a New Employee</h2>
         <input type="text" id="empId" placeholder="Employee ID">
@@ -35,27 +36,24 @@
         <button onclick="addEmployee()">Submit</button>
       </section>
 
-      <!-- Section: Remove Employee -->
       <section id="remove" class="form-section">
         <h2>Remove Employee</h2>
         <input type="text" id="removeId" placeholder="Enter Employee ID">
         <button onclick="removeEmployee()">Remove</button>
       </section>
 
-      <!-- Section: Search Employee -->
       <section id="search" class="form-section">
         <h2>Find an Employee</h2>
         <input type="text" id="searchId" placeholder="Enter Employee ID">
         <button onclick="searchEmployee()">Search</button>
       </section>
 
-      <!-- Section: Employee List -->
+      
       <section id="list" class="form-section">
         <h2>Employee Directory</h2>
         <ul id="employeeList"></ul>
       </section>
 
-      <!-- Section to Display Employee Details -->
       <section id="employeeDetails" class="employee-details"></section>
     </div>
   </div>
