@@ -73,7 +73,7 @@ document.getElementById('loginFormSubmit').addEventListener('submit', function (
 
 function showBooks() {
     const bookListDiv = document.getElementById('bookList');
-    bookListDiv.innerHTML = ''; // Clear previous book list
+    bookListDiv.innerHTML = ''; 
     
     userData.categories.forEach((category) => {
         const categoryDiv = document.createElement('div');
@@ -91,7 +91,7 @@ function showBooks() {
         bookListDiv.appendChild(categoryDiv);
     });
 
-    // Show the book categories and hide login form
+   
     document.getElementById('loginForm').style.display = 'none';
     document.getElementById('bookCategories').style.display = 'block';
 }
