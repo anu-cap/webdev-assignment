@@ -1,11 +1,11 @@
-// Define the BakeryItem constructor
+
 function BakeryItem(name, price, weight) {
     this.name = name;
     this.price = price;
     this.weight = weight;
 }
 
-// Sample list of bakery items
+
 const items = [
     new BakeryItem("Yummy Truffle", 87, "750g"),
     new BakeryItem("Almond cake", 45, "400g"),
@@ -14,16 +14,16 @@ const items = [
     new BakeryItem("Muffin", 32, "150g")
 ];
 
-// Cart object to manage items added to the cart
+
 function Cart() {
     this.items = [];
     
-    // Method to add item to cart
+   
     this.addItem = function(item) {
         this.items.push(item);
     };
 
-    // Method to display the cart
+   
     this.displayCart = function() {
         const cartList = document.getElementById("cartList");
         cartList.innerHTML = ""; // Clear previous list
@@ -41,16 +41,16 @@ function Cart() {
         }
     };
 
-    // Method to get the total price
+   
     this.getTotalPrice = function() {
         return this.items.reduce((total, item) => total + item.price, 0);
     };
 }
 
-// Instantiate a Cart object
+
 const cart = new Cart();
 
-// Display bakery items on the page
+
 function displayItems() {
     const itemList = document.getElementById("itemList");
     items.forEach(item => {
@@ -82,7 +82,7 @@ function displayItems() {
     });
 }
 
-// Event listeners for cart view
+
 document.getElementById("viewCartButton").addEventListener("click", function() {
     const cartSection = document.getElementById("cartSection");
     cartSection.style.display = "block"; // Show the cart section
@@ -95,5 +95,5 @@ document.getElementById("closeCartButton").addEventListener("click", function() 
     cartSection.style.display = "none"; // Hide the cart section
 });
 
-// Initialize the app
+
 displayItems();
