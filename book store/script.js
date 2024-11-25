@@ -1,4 +1,4 @@
-// Updated book data with images
+
 const books = {
     "Fiction": [
         { name: "The Great Gatsby", image: "https://images.unsplash.com/photo-1536632746-dc8f9ff9cc26?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwzNjB8c2VhY2h8MTF8fGJlYXV0aWZ1bHxlbnwwfHx8fDE2Nzc0MjkzNzU&ixlib=rb-1.2.1&q=80&w=400" },
@@ -24,10 +24,10 @@ const books = {
     ]
 };
 
-// Variables to store user data
+
 let userData = {};
 
-// Handle registration form submission
+
 document.getElementById('registerForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -40,22 +40,22 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         categories.push(checkbox.value);
     });
 
-    // Age validation
+   
     if (age < 10 || age > 80) {
         document.getElementById('registrationError').style.display = 'block';
         return;
     }
 
-    // Save the user data
+    
     userData = { name, age, email, categories };
     localStorage.setItem('userData', JSON.stringify(userData));
     
-    // Show the login form after successful registration
+    
     document.getElementById('registrationForm').style.display = 'none';
     document.getElementById('loginForm').style.display = 'block';
 });
 
-// Handle login form submission
+n
 document.getElementById('loginFormSubmit').addEventListener('submit', function (e) {
     e.preventDefault();
     
@@ -70,12 +70,11 @@ document.getElementById('loginFormSubmit').addEventListener('submit', function (
     }
 });
 
-// Display books based on user categories
+
 function showBooks() {
     const bookListDiv = document.getElementById('bookList');
     bookListDiv.innerHTML = ''; // Clear previous book list
     
-    // Loop through selected categories and display books
     userData.categories.forEach((category) => {
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('col-md-4', 'mb-4');
