@@ -1,5 +1,4 @@
-/* Global Styles */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,7 +111,7 @@
     background-color: #45a049;
   }
   
-  /* Employee List */
+ 
   ul {
     list-style-type: none;
     padding: 0;
