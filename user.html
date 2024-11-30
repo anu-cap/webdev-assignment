@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Welcome User</h1>
+
+    <h3>Search Products</h3>
+    <form action="/user/search" method="POST">
+        <input type="text" name="searchQuery" placeholder="Search by Name or Category" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <h3>Product Results</h3>
+    <div id="product-results"></div>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
