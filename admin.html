@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Welcome Admin</h1>
+    <h3>Product List</h3>
+    <!-- Display list of products here -->
+    <div>
+        <ul id="product-list">
+            <!-- Product list will be dynamically generated here -->
+        </ul>
+    </div>
+
+    <h3>Add New Product</h3>
+    <form action="/admin/register" method="POST">
+        <input type="text" name="name" placeholder="Product Name" required>
+        <input type="text" name="id" placeholder="Product ID" required>
+        <input type="number" name="price" placeholder="Product Price" required>
+        <input type="text" name="category" placeholder="Product Category" required>
+        <input type="date" name="manufactureDate" placeholder="Manufacture Date" required>
+        <input type="date" name="expirationDate" placeholder="Expiration Date" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
