@@ -1,4 +1,4 @@
-// Handle Admin Product Registration
+
 document.getElementById('register-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -23,7 +23,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     .catch(err => console.error('Error registering product:', err));
 });
 
-// Handle User Product Search
+
 document.getElementById('search-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
