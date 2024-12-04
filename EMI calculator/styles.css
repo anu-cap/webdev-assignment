@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f44336;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.loan-type-selection {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.loan-type-selection h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.loan-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.loan-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.loan-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.loan-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.loan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.loan-form {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.loan-form form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.loan-form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.loan-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.loan-form button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.loan-form button:hover {
+    background-color: #ff5722;
+}
+
+
+.result {
+    text-align: center;
+    display: none;
+}
+
+.result h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 18px;
+    color: #555;
+}
