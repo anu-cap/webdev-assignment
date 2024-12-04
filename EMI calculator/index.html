@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>EMI Calculator</h1>
+            <p>Calculate your EMI based on loan type, amount, and salary.</p>
+        </header>
+
+        
+        <div class="loan-type-selection">
+            <h2>Select Loan Type</h2>
+            <div class="loan-cards">
+                <div class="loan-card" id="home-loan">
+                    <img src="https://via.placeholder.com/250x150?text=Home+Loan" alt="Home Loan">
+                    <p>Home Loan</p>
+                </div>
+                <div class="loan-card" id="car-loan">
+                    <img src="https://via.placeholder.com/250x150?text=Car+Loan" alt="Car Loan">
+                    <p>Car Loan</p>
+                </div>
+                <div class="loan-card" id="education-loan">
+                    <img src="https://via.placeholder.com/250x150?text=Education+Loan" alt="Education Loan">
+                    <p>Education Loan</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="loan-form">
+            <form id="emiForm">
+                <label for="salary">Monthly Salary:</label>
+                <input type="number" id="salary" name="salary" required>
+
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" name="loanAmount" required>
+
+                <button type="submit">Calculate EMI</button>
+            </form>
+        </div>
+
+        <div id="result" class="result">
+            <h3>EMI Calculation Result</h3>
+            <p id="emiResult">Your EMI: </p>
+            <p id="loanDurationResult">Loan Duration: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
