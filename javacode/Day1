@@ -1,0 +1,20 @@
+public class RetailStore {
+
+    public static void main(String[] args) {
+        
+        byte itemPriceSmall = 5; 
+        int itemQuantitySmall = 10;
+        double salesTax = 0.08; 
+        double discount = 0.10; 
+        int totalPriceSmall = itemPriceSmall * itemQuantitySmall;
+        
+        long totalPriceBeforeTax = totalPriceSmall ;
+        double priceAfterDiscount = totalPriceBeforeTax - (totalPriceBeforeTax * discount);
+        double finalP = priceAfterDiscount + (priceAfterDiscount * salesTax);
+
+        System.out.println("Total Price of Small Items: $" + totalPriceSmall);
+        System.out.println("Total Price Before Tax: $" + totalPriceBeforeTax);
+        System.out.println("Price After Discount: $" + priceAfterDiscount);
+        System.out.println("Final Price After Sales Tax: $" + finalP);
+    }
+}
